@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/margin_dp15"
+        android:background="@drawable/qr_code_bg"
+        android:gravity="center_vertical"
+
+        android:paddingBottom="10dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="You are scanning wrong event, Please check event detail"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/eventname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username"
+            android:layout_marginTop="3dp"
+            android:gravity="center_horizontal"
+            android:text="Testing Event"
+
+            android:textColor="@color/black"
+            android:textSize="21sp" />
+
+
+        <TextView
+            android:id="@+id/submit"
+            android:layout_width="200dp"
+            android:layout_height="46dp"
+            android:layout_below="@+id/eventname"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_dp30"
+            android:background="@drawable/login_btn_bg_orange"
+            android:gravity="center"
+            android:text="Ok"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_sp18" />
+    </RelativeLayout>
+
+</RelativeLayout>
